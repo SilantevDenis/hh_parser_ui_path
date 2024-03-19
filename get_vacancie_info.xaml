@@ -1,0 +1,177 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="get_vacancie_info" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1796" sap2010:WorkflowViewState.IdRef="get_vacancie_info_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="get_vacancie_info" sap:VirtualizedContainerService.HintSize="668,1731" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="vacancies" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 44 ・ Работа в Москве, поиск персонала и публикация вакансий - hh.ru" sap:VirtualizedContainerService.HintSize="606,1620" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e779c1de-6ab8-4ca9-95d1-4c66deb4e37a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="572,1403" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="vacancie_info" />
+              <Variable x:TypeArguments="sd:DataTable" Name="list_requirements" />
+              <Variable x:TypeArguments="sd:DataTable" Name="list_skils" />
+              <Variable x:TypeArguments="sd:DataTable" Name="vacancies" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadCsvFile DataTable="[vacancies]" Delimitator="Comma" DisplayName="Read CSV" FilePath="vacancies.csv" sap:VirtualizedContainerService.HintSize="510,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[vacancies]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,1096" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="vacancie" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Текст" sap:VirtualizedContainerService.HintSize="476,910" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[vacancie.item(&quot;url&quot;).ToString]" Version="V3" />
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[list_requirements]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='list_requirements' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='ul' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e779c1de-6ab8-4ca9-95d1-4c66deb4e37a" Version="V3">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="335, 1, 770, 986" DesignTimeScaleFactor="1" FriendlyName="'Мы Каршеринг'" FullSelectorArgument="&lt;webctrl class='g-user-content' parentid='HH-React-Root' tag='DIV' /&gt;" Guid="0e659939-4432-4441-8f8d-a17c311344b9" InformativeScreenshot="fac15bec7d6ad3a9cac86ed05f124f3a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='48 ・ Вакансия Senior Project Manager в Москве, работа в компании BelkaCar' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <ui:AppendCsvFile DataTable="[list_requirements]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="list_requirements.csv" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[list_skils]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='list_skils' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e779c1de-6ab8-4ca9-95d1-4c66deb4e37a" Version="V3">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="335, 471, 770, 44" DesignTimeScaleFactor="1" FriendlyName="'Управление проектамиScr…'" FullSelectorArgument="&lt;webctrl class='bloko-tag-list' parentid='HH-React-Root' tag='DIV' /&gt;" Guid="bfdcc423-b426-4b77-8331-e72f00a8dbe5" InformativeScreenshot="3ed4f9a29f59e810cc9b78c8a3eb601e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='48 ・ Вакансия Senior Project Manager в Москве, работа в компании BelkaCar' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <ui:AppendCsvFile DataTable="[list_skils]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="list_skils.csv" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendCsvFile_2" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUQSURBVHhe5ZtLiB1FFIazdie4ExmG+IivETRKogREIhglEdRNCIKIZKGiMCCCECQMvgYCARVxFQxiEEWJ0Y0EwUUghgjujDEGFN1kESboMpNjfZ2+d6q6/+quvrdvpvvegg9mTp8+dc4//ahHzwa7cX7SLDj2OJYcRxwnHOcdK47LOfyMjWP44Ms5nKtitoY0jsl1jiccyw4KokAbEc4lBrGISWzV58hI44jc4Xjd8aNDFdMGxKYP+lI5NEYaG3KXg0v2jEMlPQnoiz7pW+WUjDQmcr1j0fGLQyV5LaBvciAXlWMt0pjAdscXDpXUekAu5KRyrUQaa3jZcdahEllPyIncVM5RpDHCDY53HasOlUAXIDdyJFdVQwlpFMw5PnaoTrsIuZKzqiVAGgsQ6JBDddRlyLlWBGn04FLq01++CLlX3g7S6MH9pAL3CWpQtWVIYw5P1C4/8FKhhujbQRodvFO7+KobFWqR44SSwcGoqkuDnLagptKIMfglh6GlCjANUFtQb/CLg8lF9dh+091mb71XZv427Z/C3hfL8XY+pX3Hg9qCCZRfPDDDUieu8cBDJtumBe2fwvEf8iBee9uJoHzHhxqHNfvFM8eun9L2XwBqHK4n+AKw0KBOCOm/AECtgQAsNaWt5EyHANSaLa8NBGC9TTmWmQ4BgJqHArDoqJzKTI8A1DwUgJVX5VRmegSg5kwA1t7Tl65TBNh4u9lzL5jt23/1nf7Sq2b3bQ3j+KQI8NhOs8XXrsZ7Y5/ZrqfNbtoY+jSDmhcQgA0I5aCpEoDCP/jI7N//cqPXVlfNjn1ndv+D5ZhVAux+1uy3s7mx0P78y+z5veV46exBgPrBj09MgG2PmP16Jv+lol28aPbwo2HMmAAH3ze7ciU3VLTlA2G8dJYQgK0odVATE4C/Rmo7dTqMqQRoEo+ra8euMGYaR5o9ACEmwKBdumT2zbdmhw6bnTyVG0V7/Mm1mEqAQeMKOPmT2Sefmn19VN9etM8+D/NM4wQCsCmpDmqqBDh6zOzWO0N/HoDqMn5nec0nJsCFC6FQcO8Ws3N/5A5e+/uf0C+N8wjAzqw6qIkJwP0/d7M+5/TPuZPX/L9YTIBndodxBryymDt4DZHnbtH+cVYQoNnubUwAXnnKHw67y7fYuJwHx5UAv58LY/hs35E7FVrzscjl9gSomr/zaiy274+vHVcCfPlVGMMnlgO3h/KPkwnQzi2wZZv2hwMHcyevUfTguBLgQyeaH8Pnns25U6GRm/KPk90C7TwEqy4/3unFVidA1VCYvlRrLkD2EGznNdhPAbLXYDsDoX4KkA2E2hkK91OAbCjc3mRI+UN3BcgmQ+1Ph4t0U4DhdBgmuyDSTQGGCyIw2SWxbgoQLIlNdlG0mwIEi6KTXRbvngClZXFI2xjZvNVsZaUMe4bKH95cKvszdR4c5+ficc7xY/jQV9EfyE35lyltjEDa1lj/iW6NQbNBUT+Jbo5C/fZ4v6ndHoeZ/kACZv4TGZjpj6QGzPRncgNm+kNJmPlPZWGmP5YeQKA+XQnkWls8SGMELiXupy4/GMmNHCsvex9prIEnahdfkeQUfdrHkMYEeKd2abBELvI9X4c0JsKoiqHles4d6JscSiO8VKSxIUwumGFdy6k0fdFnMLEZBWkcEebYLDSkrSyNBrHpYzifHxdpHBOWmlhvY9GRlddmu88hnEsMYhEzW8ZqE2lsmQ7/+/z8hv8Bzh785eBt/iYAAAAASUVORK5CYII=" InformativeScreenshot="8a0b94c46ebed1c32c265fc05f878766.jpg" Selector="&lt;html app='chrome.exe' url='google.com' /&gt;" Title="44 ・ Работа в Москве, поиск персонала и публикация вакансий - hh.ru" Url="google.com" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
